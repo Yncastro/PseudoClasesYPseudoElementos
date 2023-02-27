@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.t1{
+    font-size: 18rem;
+    color: rgb(38, 86, 70);
+}
+
+.t2{
+    font-size: 18rem;
+    color: rgb(127, 101, 151);
+}
+
+article p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+    color: blue;
+} 
+
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color:hotpink;
+} 
+
+article p::first-line {
+    font-size: 120%;
+    font-weight: bold;
+    color: aquamarine;
+}
+    

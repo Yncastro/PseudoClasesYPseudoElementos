@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#combinar_pseudoclases_y_pseudoelementos">PseudoClases</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" clas></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/actividad/index.html#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Yncastro">Mi gitHub</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Opciones
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pseudoelementos/index.html">Pseudo Elementos</a></li>
+                <li><a class="dropdown-item" href="https://twitter.com/Giselle02796762?t=n39ao4Ycx86kgTGnWZD8dQ&s=09">Mi perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">Referencias</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container-fluid" >
+      <div class="titulo">
+        <div class="col-12 col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 titulo01">
+          <h1 style="font-size: 5rem;">Pseudo Clases</h1>
+        </div>
+      </div>
+</header> 
+
+      <div class="container-fluid">
+        <div class="row 1">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :active </h1>
+            <p class="coco1">Representa un elemento (como un botón) que el usuario está activando.</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/:active#ejemplo">clic!!! Presiona aqui UwU</a>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :any-link </h1>
+            <p>Representa a un elemento que actúa como el ancla origen de un hipervínculo independientemente de si ha sido visitado</p>
+            <a href="https://example.com">Me pondre de otro color</a><br>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/:any-link#compatibilidad_con_navegadores">DESTINO</a><br>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :blank </h1>
+            <p>Selecciona elementos de entrada vaciós</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :checked </h1>
+            <p>Selecciona un botón de opción o casilla de verificación en el estado que determines.</p>
+            <input type="checkbox" id="expand-toggle" />
+              <table>
+                <thead>
+                  <tr class="coco15"><th>Columna #1</th><th>Columna #2</th><th class="coco15">Columna #3</th></tr>
+                </thead>
+                <tbody>
+                  <tr class="expandable coco15"><td>[more text]</td><td>[more text]</td><td class="coco15">[more text]              </td></tr>
+                  <tr><td class="coco15">[cell text]</td><td>[cell text]</td><td>[cell text]</td></tr>
+                  <tr><td class="coco15">[cell text]</td><td>[cell text]</td><td>[cell text]</td></tr>
+                  <tr class="expandable coco15"><td>[more text]</td><td>[more text]</td><td class="coco15">[more text]              </td></tr>
+                </tbody>
+              </table>
+          <label for="expand-toggle" id="expand-btn">Toggle hidden rows</label>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :current </h1>
+            <p>Selecciona el elemento que se muestra en ese momento, o un ancestro de ese elemento.</p>
+            <video width="100%" height="50%" controls preload="metadata">
+              <source src="tipografia/gomball.mp4" type="video/mp4" />
+              <source src="tipografia/gomball.mp4" type="video/webm" />
+              <track
+                label="English"
+                kind="subtitles"
+                srclang="en"
+                src="subtitles.vtt"
+                default />
+            </video>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :default </h1>
+            <p>Selecciona uno o más elementos de interfaz de usuario cuyo valor es el predeterminado de entre un conjunto de elementos similares.</p>
+            <input type="radio" name="season" id="spring">
+              <label for="spring">luna</label>
+
+              <input type="radio" name="season" id="summer" checked>
+              <label for="summer">tierra</label>
+
+              <input type="radio" name="season" id="fall">
+              <label for="fall">jupiter</label>
+
+              <input type="radio" name="season" id="winter">
+              <label for="winter">urano</label>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :dir() </h1>
+            <p>Selecciona un elemento según su direccionalidad (valor del atributo dir de HTML o propiedad direction de CSS).</p>
+            <div dir="rtl">
+              <span>test1</span>
+              <div dir="ltr">test2
+                <div dir="auto">עִבְרִית</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :disabled </h1>
+            <p>Selecciona elementos de la interfaz de usuario que están en estado inactivo.</p>
+            <form action="#">
+              <fieldset id="shipping">
+                <legend class="coco1">Dirección de ENVIO</legend>
+                <input class="coco1" type="text" placeholder="Nombre">
+                <input class="coco1" type="text" placeholder="Dirección">
+                <input class="coco1" type="text" placeholder="Código postal">
+              </fieldset>
+              <br>
+              <fieldset id="billing">
+                <legend class="coco1" >Dirección de facturación</legend>
+                <label class="coco1" for="billing_is_shipping">Igual que la dirección de envío:</label>
+                <input class="coco1" type="checkbox" id="billing-checkbox" checked>
+                <br>
+                <input class="coco1" type="text" placeholder="Nombre" disabled>
+                <input class="coco1" type="text" placeholder="Dirección" disabled>
+                <input class="coco1" type="text" placeholder="Código postal" disabled>
+              </fieldset>
+            </form>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :empty </h1>
+            <p>Selecciona un elemento que no tiene elementos hijo, excepto por algún espacio en blanco opcional.</p>
+            <div class="box"><!-- Voy a ser de color lima. --></div>
+            <div class="box">Voy a ser de color rosa.</div>
+            <div class="box">
+    <!-- Seré de color rosa debido a los espacios en blanco alrededor de este comentario. -->
+</div>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :enabled </h1>
+            <p>Selecciona elementos de la interfaz de usuario que están en estado activo.</p>
+            <form action="url_of_form">
+              <label for="FirstField">Primer campo (habilitado):</label>
+              <input type="text" id="FirstField" value="Lorem"><br>
+            
+              <label for="SecondField">Segundo campo (deshabilitado):</label>
+              <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+            
+              <input type="button" value="Enviar">
+            </form>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :first </h1>
+            <p>En Paged Media (en-US), selecciona la primera página.</p>
+            <p>Primera página.</p>
+            <button>Imprimir!</button>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :first-child </h1>
+            <p>Selecciona el primero entre elementos hermanos.</p>
+            <div>
+              <p class="coco1" >¡Este texto está seleccionado!</p>
+              <p class="coco1" >Este texto no está seleccionado.</p>
+            </div>
+            
+            <div>
+              <h2 class="coco1" >Este texto no está seleccionado: no es un `p`.</h2>
+              <p class="coco1" >Este texto no está seleccionado.</p>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :first-of-type </h1>
+            <p>Selecciona el primero entre un tipo determinado de elementos hermanos.</p>
+            <article>
+              <div>!Este `div` es primero!</div>
+              <div>¡Este <span>`span` anidado es el primero</span>!</div>
+              <div>¡Este <em>`em` anidado es el primero</em>, pero este <em>`em` anidado es el último</em>!</div>
+              <div>¡Este <span>`span` anidado tiene estilo</span>!</div>
+              <b>¡Este `b` califica!</b>
+              <div>Este es el `div` final.</div>
+            </article>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :focus </h1>
+            <p>Selecciona el elemento que tiene el foco.</p>
+            <input class="red-input" value="Voy a ser color rojo"><br>
+            <input class="blue-input" value="Voy a ser color azul">
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :focus-visible </h1>
+            <p>Selecciona el elemento que tiene el foco cuando el foco tiene que estar visible para el usuario.</p>
+            <input class="coco2" value="Default styles"><br>
+            <button class="coco2">Default styles</button><br>
+            <input class="focus-visible-only coco2" value=":focus-visible only"><br>
+            <button class="focus-visible-only coco2">:focus-visible only</button>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :focus-within </h1>
+            <p>Selecciona el elemento que tiene el foco y el elemento con un descendiente que tiene el foco.</p>
+            <p>Intenta escribir en este formulario.</p>
+            <form>
+              <label for="given_name">Nombre:</label>
+              <input id="given_name" type="text">
+              <br>
+              <label for="family_name">Apellido:</label>
+              <input id="family_name" type="text">
+            </form>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :future </h1>
+            <p>Selecciona los elementos que van después del elemento en curso.</p>
+            <video width="100%" height="50%" controls preload="metadata">
+              <source src="tipografia/aguacero.mp4" type="video/mp4" />
+              <source src="tipografia/aguacero.mp4" type="video/webm"/>
+              <track
+                label="English"
+                kind="subtitles"
+                srclang="en"
+                src="subtitles.vtt"
+                default />
+            </video>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :hover </h1>
+            <p>Selecciona un elemento cuando el usuario interactúa con él.</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/:hover">desliza el mouse aqui!!! :3</a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :indeterminate </h1>
+            <p>Selecciona elementos de interfaz de usuario cuyo valor está en un estado no determinado, por lo general se trata de casillas de verificación.</p>
+            <div>
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+            </div>
+            <div>
+              <input type="radio" id="radio">
+              <label for="radio">Color lima.</label>
+            </div>  
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :in-range </h1>
+            <p>Selecciona un elemento cuyo valor se encuentra dentro de un rango de valores determinado.</p>
+            <form action="" id="form1">
+              <ul>Los valores entre 1 y 10 son válidos.
+                <li>
+                  <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                  <label for="value1">Tu valor esta </label>
+                </li>
+              </ul>
+            </form>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :invalid </h1>
+            <p>Selecciona un elemento, como por ejemplo un <input>, cuyo estado es no válido.</p>
+            <form>
+              <label class="coco2" for="url_input">Ingresa una URL:</label>
+              <input class="coco2" type="url" id="url_input" />
+              <br />
+              <br />
+              <label class="coco2" for="email_input">Introduzca una dirección de correo electrónico:</label>
+              <input class="coco2" type="email" id="email_input" required/>
+            </form>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :lang </h1>
+            <p>Selecciona un elemento según el idioma (valor del atributo lang de HTML).</p>
+            <div class="coco3" lang="en"><q> Hay alguien tan inteligente que aprende de <q>la experiencia de los demás.</q> Voltaire..</q></div>
+            <div class="coco3" lang="fr"><q>Lo menos frecuente en este mundo es vivir. <q>La mayoría de la gente existe, eso es todo.</q> Oscar Wilde..</q></div>
+            <div class="coco3" lang="de"><q>No puedo enseñar nada a nadie. Solo puedo hacerles <q>pensar.</q> Sócrates..</q></div>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :last-child</h1>
+            <p>Selecciona el último elemento de entre sus elementos hermanos.</p>
+            <div>
+              <p class="coco4">Este texto no está seleccionado.</p>
+              <p class="coco4">¡Este texto está seleccionado!</p>
+            </div>
+            
+            <div>
+              <p class="coco4">Este texto no está seleccionado.</p>
+              <h2 class="coco4">Este texto no está seleccionado: no es un `p`.</h2>
+            </div>            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :last-of-type </h1>
+            <p>Selecciona el último de entre los elementos hermanos de un tipo determinado.</p>
+            <h4>En las noches claras (Gloria Fuertes)</h4>
+            <p class="coco5">En las noches claras,
+              resuelvo el problema de la soledad del ser.</p>
+            <p class="coco5">Invito a la luna y con mi sombra somos tres.</p>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :left </h1>
+            <p>En Paged Media (en-US) selecciona las páginas de la izquierda.</p>
+            <p>La :left CSS pseudo-clase, utilizada con la regla @page at, representa todas las páginas de la izquierda de un documento impreso.</p>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :link </h1>
+            <p class="coco8" >Selecciona los enlaces no visitados.</p>
+            <a  class="coco8" href="#ordinary-target">Este es un enlace ordinario.</a><br>
+            <a  class="coco8" href="https://developer.mozilla.org/es/docs/Web/CSS/:link">Ya has visitado este enlace.</a><br>
+            <a class="coco8" >MARCA MI POSICION</a>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :local-link </h1>
+            <p>Selecciona los enlaces que dirigen a páginas que se encuentran en la misma página web que el documento activo.</p>
+            <a class="coco7" href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#combinar_pseudoclases_y_pseudoelementos">este es un link de pagina</a><br />
+            <a class="coco7" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:local-link">este es otro link js</a><br />
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :any  </h1>
+            <p>Selecciona cualquiera de los selectores de la lista de selección que se pase como valor de este selector.</p>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :not() </h1>
+            <p>Selecciona elementos que otros selectores no han seleccionado antes y que se han pasado como valor de este selector.</p>
+            <p class="coco6" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fancy coco6">¡Soy muy elegante!</p>
+            <div class="coco6" >NO soy un párrafo.</div>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :nth-child </h1>
+            <p>Selecciona elementos de entre una lista de elementos hermanos. Los elementos hermanos están relacionados por una fórmula del tipo an + b (por ejemplo, 2n + 1 seleccionaría los elementos 1, 3, 5, 7, etc., es decir, todos los impares).</p>
+           <div class="first coco9">
+             <span class="coco9" >Span 1!</span>
+             <span class="coco9" >Span 2</span>
+             <span class="coco9" >Span 3!</span>
+             <span class="coco9" >Span 4</span>
+             <span class="coco9" >Span 5!</span>
+           </div>
+           <div class="second coco9">
+            <span class="coco9" >Span!</span>
+            <span class="coco9" >Span</span>
+            <em class="coco9" >Este es un `em`.</em>
+            <span class="coco9" >Span</span>
+            <span class="coco9" >Span!</span>
+            <span class="coco9" >Span</span>
+            <span class="coco9" >Span!</span>
+            <span class="coco9" >Span</span>
+          </div>
+           <div class="third coco9>
+            <span class="coco9" >Span!</span>
+            <span class="coco9" >Span</span>
+            <em class="coco9" >Este es un `em`.</em>
+            <span class="coco9" >Span!</span>
+            <span class="coco9" >Span</span>
+            <span class="coco9" >Span!</span>
+            <span class="coco9" >Span</span>
+            <span class="coco9" >Span!</span>
+          </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :nth-of-type </h1>
+            <p>Selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos..</p>
+            <div>
+              <div class="coco10" >Este elemento no se cuenta.</div>
+              <p class="coco10" >1er párrafo.</p>
+              <p class="coco10" >2do párrafo.</p>
+              <div>Este elemento no se cuenta.</div>
+              <p class="coco10" >3er párrafo.</p>
+              <p class="coco10" >4to párrafo.</p>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :nth-last-child </h1>
+            <p>selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Primera línea</td>
+                </tr>
+                <tr>
+                  <td>Segunda línea</td>
+                </tr>
+                <tr>
+                  <td >Tercera línea</td>
+                </tr>
+                <tr>
+                  <td >Cuarta línea</td>
+                </tr>
+                <tr>
+                  <td >Quinta línea</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;">:nth-last-of-type() </h1>
+            <p>Coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+            <div>
+              <span class="coco2" >Este es un span.</span>
+              <span class="coco2" >Este es otro span.</span>
+              <em class="coco2" >Esto esta enfatizado.</em>
+              <span class="coco2" >¡Guauu, este span se pone color lima!</span>
+              <strike class="coco2" >Esto está tachado.</strike>
+              <span class="coco2" >Aquí hay un último span.</span>
+            </div>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;">:only-child </h1>
+            <p>Selecciona un elemento que no tiene elementos hermanos.</p>
+            <ol>
+              <li>Primero
+                <ul>
+                  <li>Esta lista tiene solo un elemento.
+                </ul>
+              </li>
+              <li>Segundo
+                <ul>
+                  <li>Esta lista tiene tres elementos.
+                  <li>Esta lista tiene tres elementos.
+                </ul>
+              </li>
+            <ol>  
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :only-of-type </h1>
+            <p>Selecciona un elemento que es el único de su tipo entre sus elementos hermanos.</p>
+            <main>
+              <div>Soy un `div` #1.</div>
+              <p>Yo soy el único `p` entre mis hermanos.</p>
+              <div>Soy un `div` #2.</div>
+              <div>Soy un `div` #3.
+                <i>Yo soy el único hijo `i`.</i>
+                <em>Soy un `em` #1.</em>
+                <em>Soy un `em` #2.</em>
+              </div>
+            </main>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :optional </h1>
+            <p>Selecciona los elementos de formulario que son innecesarios.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :out-of-range </h1>
+            <p>Selecciona un elemento cuyo valor está fuera de rango</p>
+            <form action="" id="form1">
+              <ul>Los valores entre 1 y 10 son válidos.
+                <li>
+                  <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                  <label for="value1">Tu valor esta </label>
+                </li>
+              </ul>
+            </form>
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :placeholder-shown </h1>
+            <p>Selecciona el elemento de entrada que muestra texto de marcador de posición.</p>
+            <input placeholder="¡Escribe algo aquí!">
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :playing </h1>
+            <p>Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede «reproducir» o «pausar», cuando el elemento está «en reproducción».</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :paused </h1>
+            <p>Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede “«reproducir» o «pausar» cuando el elemento está «pausado».</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :read-only </h1>
+            <p>Selecciona los elementos que el usuario no puede modificar.</p>
+            <input class="coco16" type="text" value="Escribe lo que quieras">
+            <input class="coco0" type="text" value="Solo lectura." readonly>
+            <p>Parrafo normal.</p>
+            <p class="coco16" contenteditable="true">Puedes editar este párrafo, ¡inténtalo!</p>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :read-write</h1>
+            <p>Selecciona los elementos que el usuario puede modificar.</p>
+            <input type="text" value="Escribe lo que quieras aquí.">
+            <input type="text" value="Este es un campo de solo lectura." readonly>
+            <p>Párrafo normal.</p>
+            <p contenteditable="true">¡Puedes editar este párrafo!</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :required </h1>
+            <p>Selecciona los elementos de formulario que son necesarios.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :right</h1>
+            <p>En Paged Media (en-US) selecciona las páginas de la derecha.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :root</h1>
+            <p>Selecciona un elemento que es la raíz del documento.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :scope </h1>
+            <p>Selecciona cualquier elemento de ámbito.</p>          
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;"> :valid</h1>
+            <p>La pseudo-clase :valid de CSS representa cualquier elemento -input> u otro elemento -form> cuyo contenido se valide (en-US) satisfactoriamente. Esto permite que los campos válidos adopten fácilmente una apariencia que ayuda al usuario a confirmar que sus datos están formateados correctamente</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 dos">
+            <h1 style="font-size: 4;"> :target </h1>
+            <p>Selecciona el elemento al que apunta la URL activa (es decir, cuyo ID coincide con el identificador de fragmento de la URL activo).</p>
+            <ol>
+            <li class="coco17" ><a href="#p1">¡Salta al primer párrafo!</a></li>
+            <li class="coco17" ><a href="#p2">¡Salta al segundo párrafo!</a></li>
+            <li class="coco17" ><a href="https://developer.mozilla.org/es/docs/Web/CSS/:target">ENLACE</a></li>
+            </ol>
+
+            <h5>Mi artículo divertido</h5>
+            <p  class="coco17" id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aliquid omnis dolorum ab iusto facere.<i>1er párrafo</i></p>
+            <p  class="coco17" id="p2">Este es <i>otro párrafo Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia eaque vitae at dolorum velit.</i></p>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 uno">
+            <h1 style="font-size: 4;">:visited </h1>
+            <p>Selecciona los enlaces visitados.</p>
+            <a class="coco18" href="https://developer.mozilla.org/es/docs/Web/CSS/:visited#ver_tambi%C3%A9n">¿Ya has visitado este enlace?</a><br>
+            <a class="coco18" href="https://getbootstrap.com/">Ya has visitado este enlace.</a>
+          </div>
+          
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    
+
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: coco;
+    src: url(../Cocogoose\ Pro-trial.ttf);
+}
+@font-face{
+  font-family: caviar;
+  src: url(../tipografia/caviar2.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(191, 157, 200);
+    font-family: caviar;
+}
+
+.estilo{
+    width: 100%;
+    height: 5rem;
+    
+}
+.estilo2{
+    width: 100%;
+    height: 100vh;
+    
+}
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.uno{
+  background-color: rgb(160, 225, 203);
+  height: 410px;
+  border: inset 10px rgb(189, 109, 215);
+}
+
+.dos{
+  background-color: rgb(210, 158, 205);
+  height: 410px; 
+  border: inset 10px rgb(160, 92, 146);
+}
+
+.exciting-text::after {
+  content: " <- EXCITING!";
+  color: green;
+}
+
+.boring-text::after {
+  content: " <- BORING";
+  color: red;
+}
+.ribbon {
+  background-color: #5BC8F7;
+}
+
+.ribbon::before {
+  content: "MIRAME, SOY UNA CAJA NARANJA.";
+  background-color: #FFBA10;
+  border-color: black;
+  border-style: dotted;
+}
+li {
+  list-style-type: none;
+  position: relative;
+  margin: 2px;
+  padding: 0.5em 0.5em 0.5em 2em;
+  background: lightgrey;
+  font-family: sans-serif;
+}
+
+.coco2.done {
+  background: #CCFF99;
+}
+
+.coco2.done::before {
+  content: '';
+  position: absolute;
+  border-color: #009933;
+  border-style: solid;
+  border-width: 0 0.3em 0.25em 0;
+  height: 1em;
+  top: 1.3em;
+  left: 0.6em;
+  margin-top: -1em;
+  transform: rotate(45deg);
+  width: 0.5em;
+}
+
+.coco2{
+  font-size: 80%;
+}
+
+.coco3::first-letter {
+  color: red;
+  font-size: 130%;
+}
+.coco4::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
